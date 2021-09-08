@@ -28,7 +28,5 @@ namespace Exercise_4
                 return false;
             }
         }
-
-
     }
 }
