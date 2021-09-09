@@ -4,12 +4,22 @@ namespace Exercise_4
 {
     public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-
+            string input = Console.ReadLine();
+            int year = Int32.Parse(input);
+            bool isLeapYear = IsLeapYear(year);
+            if (isLeapYear)
+            {
+                Console.Write("yay");
+            }
+            else
+            {
+                Console.Write("nay");
+            }
         }
 
-        public bool IsLeapYear(int year)
+        public static bool IsLeapYear(int year)
         {
             if (year % 4 == 0)
             {
@@ -28,7 +38,6 @@ namespace Exercise_4
                 return false;
             }
         }
-
 
     }
 }
